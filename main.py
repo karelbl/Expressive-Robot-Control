@@ -79,8 +79,6 @@ def auto_correl_matrix(q_point_col, T):
     new_q = []
     for i in range(len(q_point_col)):
         new_q.append(q_point_col[i].reshape(12,1))
-    print(new_q[50])
-    print(q_point_col[50])
     res = np.zeros([len(q_point_col[0]), len(q_point_col[0])])
     for i in range(1, len(q_point_col)):
         res += np.dot(new_q[i], new_q[i-1].T)
@@ -96,7 +94,6 @@ def auto_correl_matrix_from_beginning(file_path):
         chemin_fichier = os.path.join(file_path, nom_fichier)
         # Vérifiez si c'est un fichier (et pas un dossier)
         if os.path.isfile(chemin_fichier):
-            print(f'Trouvé fichier: {chemin_fichier}')
             # Faites quelque chose avec le fichier
             data.append([nom_fichier,open_file(chemin_fichier)])
     T = data[0][1][len(data[0][1])-1][0]
