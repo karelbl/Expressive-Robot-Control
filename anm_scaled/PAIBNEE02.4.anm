@@ -1,0 +1,56 @@
+#
+# this file was automatically created by the Motion class
+#
+
+Animate {
+	Directory cap_data/emotion/anm_scaled/PAIBNEE02.4
+	DataType Angle
+	Cyclic False
+	BaseOffset 0 0 0
+	BaseAttOffset 1 0 0 0 1 0 0 0 1
+	Link Body {
+		JointType Free
+	}
+	Link UpperBody {
+		JointType Sphere
+	}
+	Link LeftLeg1 {
+		JointType Sphere
+	}
+	Link RightLeg1 {
+		JointType Sphere
+	}
+	Link RightLeg2 {
+		JointType Rotate
+	}
+	Link RightFoot {
+		JointType Sphere
+	}
+	Link LeftLeg2 {
+		JointType Rotate
+	}
+	Link LeftFoot {
+		JointType Sphere
+	}
+	Link Head {
+		JointType Sphere
+	}
+	Link LeftArm1 {
+		JointType Sphere
+	}
+	Link RightArm1 {
+		JointType Sphere
+	}
+	Link RightArm2 {
+		JointType Rotate
+	}
+	Link RightHand {
+		JointType Sphere
+	}
+	Link LeftArm2 {
+		JointType Rotate
+	}
+	Link LeftHand {
+		JointType Sphere
+	}
+}
